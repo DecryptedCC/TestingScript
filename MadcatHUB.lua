@@ -1,7 +1,7 @@
 ----Mcat 774 UI Scripts
-game:GetService("StarterGui"):SetCore("SendNotification",{ 	
+game:GetService("StarterGui"):SetCore("SendNotification",{  
 
-    Title = "Welcome User.",  	
+    Title = "Welcome User.",    
     
     Text = "Welcome to MadcatHUB",
     
@@ -9,18 +9,18 @@ game:GetService("StarterGui"):SetCore("SendNotification",{
     
     wait()
     
-    game:GetService("StarterGui"):SetCore("SendNotification",{ 	
+    game:GetService("StarterGui"):SetCore("SendNotification",{  
     
-    Title = "GUI loaded!",  	
+    Title = "GUI loaded!",      
     
     Text = "Thank you for using Madcat#0774"
     })
 
 -----------------------PLAYER HACKS------------------------------------
 local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/xHeptc/Kavo-UI-Library/main/source.lua"))()
-local Window = Library.CreateLib("MadcatHUB", "Sentinel")
+local Window = Library.CreateLib("Project Madcat UI", "Sentinel")
 
-local Tab = Window:NewTab("Players")
+local Tab = Window:NewTab("Local Player Hacks")
 local PlayersSection = Tab:NewSection("Character Functions")
 PlayersSection:NewSlider("Walkspeed", "Speed Walk", 500, 0, function(s) -- 500 (MaxValue) | 0 (MinValue)
     game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = s
@@ -29,10 +29,56 @@ PlayersSection:NewSlider("JumpPower", "HighJump", 500, 0, function(s) -- 500 (Ma
     game.Players.LocalPlayer.Character.Humanoid.JumpPower = s
 end)
 
+PlayersSection:NewButton("Inf Jump","Jump Whenever you want", function ()
+    
+    print("Clicked")
+    loadstring(game:HttpGet(('https://pastebin.com/raw/V5PQy3y0'),true))()
+
+
+end)
+PlayersSection:NewButton("ESP","ESP Name", function ()
+    
+     print("Clicked")
+     loadstring(game:HttpGet(('https://raw.githubusercontent.com/DecryptedCC/TestingScript/main/MCAT%20ESP.lua'),true))()
+
+
+end)
+
+PlayersSection:NewButton("Fly","Fly GUI", function ()
+    
+    print("Clicked")
+    loadstring(game:HttpGet(('https://pastebin.com/raw/JyzmArqx'),true))()
+
+
+end)
+
+PlayersSection:NewButton("Aimbot","Aimbot Gui", function ()
+    
+    print("Clicked")
+    loadstring(game:HttpGet(('https://raw.githubusercontent.com/Exunys/Aimbot-Script/main/Aimbot%20Script.lua'),true))()
+
+
+end)
+
+PlayersSection:NewButton("Noclip Fly","Press E to Fly ", function ()
+    
+    print("Clicked")
+    loadstring(game:HttpGet(('https://pastebin.com/raw/hUaygetD'),true))()
+
+
+end)
+
+PlayersSection:NewButton("Ctrl Click Del","Unknown", function ()
+    
+    print("Clicked")
+    loadstring(game:HttpGet(('https://pastebin.com/raw/DgGvKjgY'),true))()
+
+
+end)
 ------------- GUI SELECTIONS--------------------------
 
-local Tab = Window:NewTab("GUI")
-local GUISection = Tab:NewSection("GUI HUB")
+local Tab = Window:NewTab("Game UI")
+local GUISection = Tab:NewSection("Game Gui's")
 GUISection:NewButton("VHUB", "Vhub script", function()
 
     print("Clicked")
@@ -73,6 +119,15 @@ GUISection:NewButton("VGHUB", "VG HUB GUI", function()
     print("Clicked")
 
 loadstring(game:HttpGet(('https://raw.githubusercontent.com/1201for/V.G-Hub/main/V.Ghub'),true))()
+
+end)
+
+GUISection:NewButton("Infinity Yield  ", "Unknown", function()
+
+    print("Clicked")
+
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source"))()
+
 
 end)
 
@@ -125,14 +180,58 @@ GUISection:NewButton("Epic Minigames  ", "EPIC MINI GUI ", function()
 
 end)
 
+GUISection:NewButton("Grand Pirates", "GP GUI ", function()
 
----------------------------Credits-----------------------
-local Tab = Window:NewTab("Credits")
-local CreditsSection = Tab:NewSection("Credits")
-label:CreditsUpdateLabel("Special thanks to xHeptc,Xellest,Misaki,Proto Soul")
+    print("Clicked")
 
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/Bebo-Mods/BeboScripts/main/GrandPirates.lua"))()
 
+end)
 
+GUISection:NewButton("Hitbox Expander", "Press Right Ctrl to Show Ui ", function()
 
+    print("Clicked")
 
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/Bebo-Mods/BeboScripts/main/GrandPirates.lua"))()
 
+end)
+
+GUISection:NewButton("Zyrex Hub", "Only Works on FPS GAME", function()
+
+    print("Clicked")
+
+    loadstring(game:HttpGet("https://pastebin.com/raw/KbrAQLwA"))()
+
+end)
+
+--------------------------Morph----------------------
+local Tab = Window:NewTab("R6 Forms")
+local CharaSection = Tab:NewSection("Visual Forms")
+
+CharaSection:NewButton("Ravenger", "Visual Only", function()
+
+    print("Clicked")
+
+    loadstring(game:HttpGet('https://pastebin.com/raw/ej3zzWuA'))()
+
+end)
+
+CharaSection:NewButton("Wyd Form", "Visual Only", function()
+
+    print("Clicked")
+
+    loadstring(game:HttpGet('https://pastebin.com/raw/UkETRCVn'))()
+
+end)
+
+--------------------- External Gui----------------
+
+local Tab = Window:Newtab("External UI")
+local OtherSection = Tab:NewSection("External UI")
+
+OtherSection:NewButton("Hitbox Expander UI,Made By Squares From V3rm", function()
+    print("Clicked")
+
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/RectangularObject/boblox/main/Other/Universal%20Hitbox%20Extender.lua", true))()
+    
+end)
