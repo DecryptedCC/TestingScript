@@ -147,11 +147,19 @@ loadstring(game:HttpGet(('https://raw.githubusercontent.com/0x37Dev/Cool-Solo-Du
 
 end)
 
-GUISection:NewButton("ESP Player", "Esp Walls", function()
+GUISection:NewButton("LT2 M.O.N.E.Y", "Only Works on LT2", function()
 
     print("Clicked")
 
-loadstring(game:HttpGet(('https://raw.githubusercontent.com/DecryptedCC/TestingScript/main/MCAT%20ESP.lua'),true))()
+    loadstring(game:HttpGet'https://pastebin.com/raw/hnVtRcyb')()
+
+end)
+
+GUISection:NewButton("CheatX", "CheatX External GUI", function()
+
+    print("Clicked")
+
+    loadstring(game:HttpGet('https://paste.ee/r/QEhJq'))()
 
 end)
 
@@ -225,13 +233,24 @@ CharaSection:NewButton("Wyd Form", "Visual Only", function()
 end)
 
 --------------------- External Gui----------------
+local Tab = Window:NewTab("External GUI")
+ExternalSection:NewButton("CheatX", "External CheatX", function()
 
-local Tab = Window:Newtab("External UI")
-local OtherSection = Tab:NewSection("External UI")
-
-OtherSection:NewButton("Hitbox Expander UI,Made By Squares From V3rm", function()
     print("Clicked")
 
-    loadstring(game:HttpGet("https://raw.githubusercontent.com/RectangularObject/boblox/main/Other/Universal%20Hitbox%20Extender.lua", true))()
-    
+    loadstring(game:HttpGet('https://paste.ee/r/QEhJq'))()
+
 end)
+
+
+
+
+
+------------------Color GUI-------
+local Tab = Window:NewTab("Custom UI Design")
+local Window = Library.CreateLib("TITLE", colors)
+for theme, color in pairs(themes) do
+    Section:NewColorPicker(theme, "Change your "..theme, color, function(color3)
+        Library:ChangeColor(theme, color3)
+    end)
+end
