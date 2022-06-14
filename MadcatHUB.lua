@@ -18,7 +18,7 @@ game:GetService("StarterGui"):SetCore("SendNotification",{
 
 -----------------------PLAYER HACKS------------------------------------
 local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/xHeptc/Kavo-UI-Library/main/source.lua"))()
-local Window = Library.CreateLib("Project Madcat UI", "Sentinel")
+local Window = Library.CreateLib("Project Madcat UI", "Serpent")
 
 local Tab = Window:NewTab("Local Player Hacks")
 local PlayersSection = Tab:NewSection("Character Functions")
