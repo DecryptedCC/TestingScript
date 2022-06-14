@@ -56,7 +56,7 @@ end)
 meta.__namecall = newcclosure(function(rc, ...)
 	args = {...}
 	if getnamecallmethod() == "FindFirstChild" and args[1] == "PermanentBan" and rc == LPlr then
-		AddClientMessage("Someone Attempted To Freeze You!", 4)
+		AddClientMessage("Someone Attempted To Kill You!", 4)
 		return
 	elseif SpawnItemOnBullet and getnamecallmethod() == "FireServer" and (tostring(rc) == "BulletHit" or tostring(rc) == "BloodHit") then
 		local Pos = args[1]
@@ -1703,7 +1703,7 @@ Bar.BackgroundTransparency = 0.4
 Bar.BorderSizePixel = 0
 Bar.Size = UDim2.new(1, 0, 0, 25)
 Bar.Font = Enum.Font.SciFi
-Bar.Text = "Victini's Apoc Gui V.2"
+Bar.Text = "God Is Dead"
 Bar.TextColor3 = Color3.fromRGB(0, 0, 0)
 Bar.TextScaled = true
 Bar.TextSize = 14
@@ -7851,7 +7851,7 @@ DoLoad()
 --Finish Loading Settings--
 
 --Frame Coloring--
-Notify("Gui is fully loaded!\n If any problems are found they'll appear after this message!", 10)
+Notify("Gui is fully loaded!\n Just Ask me On Discord Madcat#0774", 10)
 CheckFor(game.ReplicatedStorage.Zombies.Zombie, "thisishat", true, "Warning, zombies are unhitable!", 5)
 CheckForExploits()
 CheckFor(game.Workspace, "Zombies", false, "Warning, zombies not found in Workspace!", 8)
