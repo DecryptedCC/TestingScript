@@ -212,6 +212,14 @@ GUISection:NewButton("Zyrex Hub", "Only Works on FPS GAME", function()
 
 end)
 
+GUISection:NewButton("Hoo Hoo Hub", "Only Works on BloxFruit", function()
+
+    print("Clicked")
+
+    loadstring(game:HttpGet('https://raw.githubusercontent.com/acsu123/HOHO_H/main/Loading_UI'))()
+
+end)
+
 --------------------------Morph----------------------
 local Tab = Window:NewTab("R6 Forms")
 local CharaSection = Tab:NewSection("Visual Forms")
