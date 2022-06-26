@@ -220,6 +220,13 @@ GUISection:NewButton("Hoo Hoo Hub", "Only Works on BloxFruit", function()
 
 end)
 
+GUISection:NewButton("Jailbreak AutoFarm", "Only Works on Jailbreak", function()
+
+    print("Clicked")
+
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/wawsdasdacx/ohascriptnrrewading/main/jbsaxcriptidk1"))();
+
+end)
 --------------------------Morph----------------------
 local Tab = Window:NewTab("R6 Forms")
 local CharaSection = Tab:NewSection("Visual Forms")
