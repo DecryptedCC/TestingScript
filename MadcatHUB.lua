@@ -18,7 +18,7 @@ game:GetService("StarterGui"):SetCore("SendNotification",{
 
 -----------------------PLAYER HACKS------------------------------------
 local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/xHeptc/Kavo-UI-Library/main/source.lua"))()
-local Window = Library.CreateLib("AzurexMadcat", "Sentinel")
+local Window = Library.CreateLib("AzureHub", "Synapse")
 
 local Tab = Window:NewTab("Local Player Hacks")
 local PlayersSection = Tab:NewSection("Character Functions")
@@ -196,11 +196,11 @@ GUISection:NewButton("Grand Pirates", "GP GUI ", function()
 
 end)
 
-GUISection:NewButton("Hitbox Expander", "Press Right Ctrl to Show Ui ", function()
+GUISection:NewButton("King Legacy GUI", "Only Works in King Legacy ", function()
 
     print("Clicked")
 
-    loadstring(game:HttpGet("https://raw.githubusercontent.com/Bebo-Mods/BeboScripts/main/GrandPirates.lua"))()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/PainfulDestroyer/Roblox/main/King%20Legacy"))()
 
 end)
 
@@ -228,32 +228,6 @@ GUISection:NewButton("Jailbreak AutoFarm", "Only Works on Jailbreak", function()
 
 end)
 
-GUISection:NewButton("Legacy Engine | Script Hub, "Only Works on Legacy", function()
-
-    print("Clicked")
-
-    loadstring(game:HttpGet('https://github.com/LeanNBud/LegacyEngine/raw/main/DBOG/loader', true))()
-
-end)
-
-GUISection:NewButton("King Legacy, "Only Works on Legacy", function()
-
-    print("Clicked")
-
-    loadstring(game:HttpGet("https://raw.githubusercontent.com/PainfulDestroyer/Roblox/main/King%20Legacy"))()
-
-end)
-
-GUISection:NewButton("King Legacy, "Only Works on Legacy", function()
-
-    print("Clicked")
-
-    loadstring(game:HttpGet("https://raw.githubusercontent.com/PainfulDestroyer/Roblox/main/King%20Legacy"))()
-
-end)
-
-
-
 --------------------------Morph----------------------
 local Tab = Window:NewTab("R6 Forms")
 local CharaSection = Tab:NewSection("Visual Forms")
@@ -276,6 +250,8 @@ end)
 
 --------------------- External Gui----------------
 local Tab = Window:NewTab("External GUI")
+Local ExternalSection = Tab:NewSection("External Gui")
+
 ExternalSection:NewButton("CheatX", "External CheatX", function()
 
     print("Clicked")
@@ -283,9 +259,6 @@ ExternalSection:NewButton("CheatX", "External CheatX", function()
     loadstring(game:HttpGet('https://paste.ee/r/QEhJq'))()
 
 end)
-
-
-
 
 
 ------------------Color GUI-------
@@ -296,3 +269,13 @@ for theme, color in pairs(themes) do
         Library:ChangeColor(theme, color3)
     end)
 end
+
+-----------------------------
+-------Hotkeys to hide----------
+local tab = Window:Newtab("Misc")
+local window = Library.CreateLib("Misc Functions")
+
+Section:NewKeybind("Insert", "Press Insert to hide UI", Enum.KeyCode.Insert, function()
+	Library:ToggleUI()
+        print("Clicked")
+end)
