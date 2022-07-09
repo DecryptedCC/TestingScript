@@ -250,8 +250,6 @@ end)
 
 --------------------- External Gui----------------
 local Tab = Window:NewTab("External GUI")
-Local ExternalSection = Tab:NewSection("External Gui")
-
 ExternalSection:NewButton("CheatX", "External CheatX", function()
 
     print("Clicked")
