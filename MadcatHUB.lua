@@ -18,7 +18,7 @@ game:GetService("StarterGui"):SetCore("SendNotification",{
 
 -----------------------PLAYER HACKS------------------------------------
 local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/xHeptc/Kavo-UI-Library/main/source.lua"))()
-local Window = Library.CreateLib("Project Madcat UI", "Serpent")
+local Window = Library.CreateLib("AzurexMadcat", "Sentinel")
 
 local Tab = Window:NewTab("Local Player Hacks")
 local PlayersSection = Tab:NewSection("Character Functions")
@@ -227,6 +227,33 @@ GUISection:NewButton("Jailbreak AutoFarm", "Only Works on Jailbreak", function()
     loadstring(game:HttpGet("https://raw.githubusercontent.com/wawsdasdacx/ohascriptnrrewading/main/jbsaxcriptidk1"))();
 
 end)
+
+GUISection:NewButton("Legacy Engine | Script Hub, "Only Works on Legacy", function()
+
+    print("Clicked")
+
+    loadstring(game:HttpGet('https://github.com/LeanNBud/LegacyEngine/raw/main/DBOG/loader', true))()
+
+end)
+
+GUISection:NewButton("King Legacy, "Only Works on Legacy", function()
+
+    print("Clicked")
+
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/PainfulDestroyer/Roblox/main/King%20Legacy"))()
+
+end)
+
+GUISection:NewButton("King Legacy, "Only Works on Legacy", function()
+
+    print("Clicked")
+
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/PainfulDestroyer/Roblox/main/King%20Legacy"))()
+
+end)
+
+
+
 --------------------------Morph----------------------
 local Tab = Window:NewTab("R6 Forms")
 local CharaSection = Tab:NewSection("Visual Forms")
