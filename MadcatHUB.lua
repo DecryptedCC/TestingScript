@@ -228,6 +228,14 @@ GUISection:NewButton("Jailbreak AutoFarm", "Only Works on Jailbreak", function()
 
 end)
 
+GUISection:NewButton("BK Petsim", "Only Works on Petsim", function()
+
+    print("Clicked")
+
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/BLACKGAMER1221/Pet-Simulator-X/main/BK%20Pet.lua"))()
+
+end)
+
 --------------------------Morph----------------------
 local Tab = Window:NewTab("R6 Forms")
 local CharaSection = Tab:NewSection("Visual Forms")
