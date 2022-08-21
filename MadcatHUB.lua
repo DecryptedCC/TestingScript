@@ -236,6 +236,14 @@ GUISection:NewButton("BK Petsim", "Only Works on Petsim", function()
 
 end)
 
+GUISection:NewButton("Anime Adventure", "Only Works on Anim Adventures", function()
+
+    print("Clicked")
+
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/ArponAG/Scripts/main/AnimeAdventures.lua"))()
+
+end)
+
 --------------------------Morph----------------------
 local Tab = Window:NewTab("R6 Forms")
 local CharaSection = Tab:NewSection("Visual Forms")
