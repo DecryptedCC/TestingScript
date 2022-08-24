@@ -244,6 +244,14 @@ GUISection:NewButton("Anime Adventure", "Only Works on Anim Adventures", functio
 
 end)
 
+
+GUISection:NewButton("Project Hook", "No Description", function()
+
+    print("Clicked")
+
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/SpiritXmas/Project-Hook/main/required.lua"))()
+
+end)
 --------------------------Morph----------------------
 local Tab = Window:NewTab("R6 Forms")
 local CharaSection = Tab:NewSection("Visual Forms")
