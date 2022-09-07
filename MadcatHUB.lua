@@ -252,6 +252,8 @@ GUISection:NewButton("Project Hook", "No Description", function()
     loadstring(game:HttpGet("https://raw.githubusercontent.com/SpiritXmas/Project-Hook/main/required.lua"))()
 
 end)
+
+
 --------------------------Morph----------------------
 local Tab = Window:NewTab("R6 Forms")
 local CharaSection = Tab:NewSection("Visual Forms")
@@ -271,6 +273,15 @@ CharaSection:NewButton("Wyd Form", "Visual Only", function()
     loadstring(game:HttpGet('https://pastebin.com/raw/UkETRCVn'))()
 
 end)
+
+GUISection:NewButton("Murder Mystery 2 GUI", "No Description", function()
+
+    print("Clicked")
+
+    loadstring(game:GetObjects("rbxassetid://4001118261")[1].Source)()
+
+end)
+
 
 --------------------- External Gui----------------
 local Tab = Window:NewTab("External GUI")
