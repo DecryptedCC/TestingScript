@@ -228,11 +228,11 @@ GUISection:NewButton("Jailbreak AutoFarm", "Only Works on Jailbreak", function()
 
 end)
 
-GUISection:NewButton("BK Petsim", "Only Works on Petsim", function()
+GUISection:NewButton("Petsim Hub", "Only Works on Petsim", function()
 
     print("Clicked")
 
-    loadstring(game:HttpGet("https://raw.githubusercontent.com/BLACKGAMER1221/Pet-Simulator-X/main/BK%20Pet.lua"))()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/UltraStuff/scripts2/main/petsimx", true))()
 
 end)
 
